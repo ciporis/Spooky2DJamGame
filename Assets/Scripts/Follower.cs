@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CameraFollower : MonoBehaviour
+public class Follower : MonoBehaviour
 {
     [SerializeField] private Transform _linearMover;
     [SerializeField] private float _offsetX;

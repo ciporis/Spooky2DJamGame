@@ -2,17 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Line : MonoBehaviour
+abstract class Line : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float Y;
 
-    // Update is called once per frame
-    void Update()
+    public Line(float y)
     {
-        
+        Y = y;
     }
 }
