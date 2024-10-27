@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
     [SerializeField] private float _distance;
     [SerializeField] private int _damage;
     [SerializeField] private LayerMask _solidObjects;
+    [SerializeField] private ParticleSystem _effect;
 
     void Update()
     {
@@ -24,6 +25,7 @@ public class Bullet : MonoBehaviour
             {
                 hitInfo.collider.GetComponent<Enemy>().TakeDamage(_damage);
             }
+            Instantiate(_effect, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
         transform.Translate(Vector2.right * _speed * Time.deltaTime);

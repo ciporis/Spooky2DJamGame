@@ -104,3 +104,4 @@ MonoBehaviour:
   _solidObjects:
     serializedVersion: 2
     m_Bits: 64
+  _effect: {fileID: 1177311635867483733, guid: 0f8e11ceb2758554e9e76e96ff241663, type: 3}
