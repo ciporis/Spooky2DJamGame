@@ -4,10 +4,12 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] private int _health;
     [SerializeField] private float _speed;
+    [SerializeField] private float _lifeTime;
 
     private void Update()
     {
-        if(_health <= 0)
+        _lifeTime -= Time.deltaTime;
+        if(_health <= 0 || _lifeTime <= 0)
         {
             Destroy(gameObject);    
         }
