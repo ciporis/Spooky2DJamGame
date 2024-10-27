@@ -101,6 +101,7 @@ MonoBehaviour:
   _health: 2
   _speed: 3
   _lifeTime: 9
+  _pointsManager: {fileID: 7617233159092817213, guid: 5b8608339deba8940825bd3fd9a78370, type: 3}
 --- !u!70 &1045572162
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

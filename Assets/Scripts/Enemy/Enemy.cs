@@ -6,12 +6,18 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private float _lifeTime;
 
+
     private void Update()
     {
         _lifeTime -= Time.deltaTime;
-        if(_health <= 0 || _lifeTime <= 0)
+        if(_health <= 0)
         {
+            PointsManager.PointsAmount++;
             Destroy(gameObject);    
+        }
+        else if(_lifeTime <= 0)
+        {
+            Destroy(gameObject);
         }
         MoveLeft();
     }

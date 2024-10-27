@@ -3,11 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class PlayerSceneReloader : MonoBehaviour
 {
-    private void OnCollidionEnter2D (Collision2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Enemy")
         {
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            PointsManager.PointsAmount = 0;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
