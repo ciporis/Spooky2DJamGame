@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/.vsconfig
+/Assembly-CSharp.csproj
+/Assets
+/Library
+/Logs
+/obj
+/Packages
+/ProjectSettings
+/Spooky season.sln
+/Temp
+/UserSettings
